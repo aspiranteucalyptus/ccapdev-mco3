@@ -15,7 +15,7 @@ const app = express();
 const port = 3000;
 const apiRouter = express.Router();
 
-mongoose.connect("mongodb+srv://newguy:WoFPEGb0BbmfBjtp@t3db.zs0xhy7.mongodb.net/?retryWrites=true&w=majority&appName=T3Db");
+mongoose.connect("mongodb://127.0.0.1:27017/T3Db");
 
 const passwordMatches = async (password, hash) => {
   try {
